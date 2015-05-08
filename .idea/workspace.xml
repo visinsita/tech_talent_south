@@ -26,19 +26,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="welcome_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rails/travel/app/controllers/welcome_controller.rb">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rails/travel/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="3" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+            <state line="7" column="36" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rails/travel/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="12" selection-start="3430" selection-end="3430" vertical-scroll-proportion="-17.5" vertical-offset="675" max-vertical-offset="1245">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Rails/travel/app/views/welcome/about.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="9" selection-start="389" selection-end="389" vertical-scroll-proportion="0.43814433" vertical-offset="0" max-vertical-offset="582">
+            <state line="9" column="130" selection-start="330" selection-end="330" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rails/travel/app/assets/stylesheets/application.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="16" selection-start="867" selection-end="867" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rails/travel/app/controllers/welcome_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="5" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Rails/travel/app/views/welcome/contact.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="9" selection-start="135" selection-end="135" vertical-scroll-proportion="0.15463917" vertical-offset="0" max-vertical-offset="582">
               <folding />
             </state>
           </provider>
@@ -47,7 +83,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Rails/travel/app/views/welcome/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="39" selection-start="252" selection-end="252" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="300">
+            <state line="2" column="34" selection-start="97" selection-end="97" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
@@ -81,11 +117,16 @@
         <option value="$PROJECT_DIR$/Rails/hello/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/Rails/ToDo_app/config/routes.rb" />
         <option value="$PROJECT_DIR$/personal_site_v4/index.html" />
-        <option value="$PROJECT_DIR$/Rails/travel/config/routes.rb" />
         <option value="$PROJECT_DIR$/Rails/hello/app/views/pages/home.html.erb" />
+        <option value="$PROJECT_DIR$/Rails/travel/app/models/post.rb" />
+        <option value="$PROJECT_DIR$/Rails/travel/db/migrate/20150507141745_create_posts.rb" />
+        <option value="$PROJECT_DIR$/Rails/travel/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/Rails/travel/app/views/welcome/index.html.erb" />
-        <option value="$PROJECT_DIR$/Rails/travel/app/controllers/welcome_controller.rb" />
         <option value="$PROJECT_DIR$/Rails/travel/app/views/welcome/about.html.erb" />
+        <option value="$PROJECT_DIR$/Rails/travel/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/Rails/travel/config/routes.rb" />
+        <option value="$PROJECT_DIR$/Rails/travel/app/controllers/welcome_controller.rb" />
+        <option value="$PROJECT_DIR$/Rails/travel/app/views/welcome/contact.html.erb" />
       </list>
     </option>
   </component>
@@ -140,7 +181,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -169,7 +209,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="personal_site_v4" />
+              <option name="myItemId" value="Rails" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -188,6 +232,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -246,6 +294,10 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -266,6 +318,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TTS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TTS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,6 +372,10 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -318,10 +400,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -341,6 +419,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -352,6 +431,8 @@
     <property name="options.searchVisible" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/personal_site_v4" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RunManager" selected="Gem Command.Middleman">
     <configuration default="true" type="CommandRunConfigurationType" factoryName="Gem Command">
@@ -512,16 +593,30 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/personal_site_v4/index.html">
+    <entry file="file://$PROJECT_DIR$/Rails/travel/app/models/post.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="54" selection-start="2327" selection-end="2327" vertical-scroll-proportion="0.0" vertical-offset="588" max-vertical-offset="1170">
+        <state line="1" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="135">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/personal_site_v4/assets/stylesheets/project_update_styles.css">
+    <entry file="file://$PROJECT_DIR$/Rails/travel/app/controllers/welcome_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="14" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1185">
+        <state line="11" column="3" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rails/travel/app/views/welcome/about.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="9" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rails/travel/app/views/welcome/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="39" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="300">
           <folding />
         </state>
       </provider>
@@ -546,159 +641,126 @@
         <state line="18" column="11" selection-start="878" selection-end="878" vertical-scroll-proportion="0.4745167" vertical-offset="0" max-vertical-offset="1665" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/personal_site_v2/assets/stylesheets/project_update_styles.css">
+    <entry file="file://$PROJECT_DIR$/Rails/hello/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="606" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/personal_site_v2/project_update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="4" selection-start="2244" selection-end="3059" vertical-scroll-proportion="-9.375" vertical-offset="1170" max-vertical-offset="1815" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rails/hello/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="606">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rails/hello/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="57" selection-start="117" selection-end="117" vertical-scroll-proportion="0.10309278" vertical-offset="0" max-vertical-offset="582">
-          <folding />
-        </state>
+        <state line="4" column="57" selection-start="117" selection-end="117" vertical-scroll-proportion="0.10309278" vertical-offset="0" max-vertical-offset="582" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rails/hello/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="28" selection-start="726" selection-end="726" vertical-scroll-proportion="0.5693069" vertical-offset="0" max-vertical-offset="1020">
-          <folding />
-        </state>
+        <state line="23" column="28" selection-start="726" selection-end="726" vertical-scroll-proportion="0.5693069" vertical-offset="0" max-vertical-offset="1020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/middleman/rayproject/config.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/middleman/rayproject/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="606">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="606" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/middleman/rayproject/source/stylesheets/all.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="1" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.95049506" vertical-offset="549" max-vertical-offset="1215">
-          <folding />
-        </state>
+        <state line="75" column="1" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.95049506" vertical-offset="549" max-vertical-offset="1215" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/middleman/rayproject/source/stylesheets/normalize.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.589109" vertical-offset="2175" max-vertical-offset="5700">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.589109" vertical-offset="2175" max-vertical-offset="5700" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/middleman/rayproject/source/layouts/layout.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="36" selection-start="487" selection-end="487" vertical-scroll-proportion="0.38659793" vertical-offset="0" max-vertical-offset="582">
-          <folding />
-        </state>
+        <state line="15" column="36" selection-start="487" selection-end="487" vertical-scroll-proportion="0.38659793" vertical-offset="0" max-vertical-offset="582" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/middleman/rayproject/source/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="48" selection-end="48" vertical-scroll-proportion="0.10309278" vertical-offset="0" max-vertical-offset="780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/personal_site_v4/assets/stylesheets/project_update_styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="11" selection-start="159" selection-end="159" vertical-scroll-proportion="0.34653464" vertical-offset="0" max-vertical-offset="1185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/personal_site_v5/assets/stylesheets/project_update_styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/personal_site_v5/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
-          <folding />
-        </state>
+        <state line="4" column="18" selection-start="48" selection-end="48" vertical-scroll-proportion="0.10309278" vertical-offset="0" max-vertical-offset="780" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rails/hello/README.rdoc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="22" selection-start="477" selection-end="477" vertical-scroll-proportion="0.66831684" vertical-offset="0" max-vertical-offset="606">
-          <folding />
-        </state>
+        <state line="27" column="22" selection-start="477" selection-end="477" vertical-scroll-proportion="0.66831684" vertical-offset="0" max-vertical-offset="606" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rails/hello/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="765">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rails/hello/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.14851485" vertical-offset="0" max-vertical-offset="606">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.14851485" vertical-offset="0" max-vertical-offset="606" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rails/hello/app/models/concerns/home.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="16" selection-start="39" selection-end="39" vertical-scroll-proportion="0.074257426" vertical-offset="0" max-vertical-offset="606">
-          <folding />
-        </state>
+        <state line="3" column="16" selection-start="39" selection-end="39" vertical-scroll-proportion="0.074257426" vertical-offset="0" max-vertical-offset="606" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rails/ToDo_app/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="21" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
-          <folding />
-        </state>
+        <state line="1" column="21" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rails/ToDo_app/app/controllers/to_dos_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/personal_site_v4/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="53" selection-start="1090" selection-end="1090" vertical-scroll-proportion="-9.0" vertical-offset="249" max-vertical-offset="885">
-          <folding>
-            <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#1;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
+        <state line="2" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rails/ToDo_app/db/migrate/20150505133311_create_to_dos.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rails/ToDo_app/app/views/to_dos/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="606" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rails/ToDo_app/app/views/to_dos/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.005154639" vertical-offset="3" max-vertical-offset="585" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rails/ToDo_app/app/views/to_dos/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="606" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rails/travel/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rails/hello/app/controllers/pages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="20" selection-start="77" selection-end="77" vertical-scroll-proportion="0.04950495" vertical-offset="0" max-vertical-offset="606" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rails/hello/app/views/pages/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="9" selection-start="196" selection-end="196" vertical-scroll-proportion="0.20618556" vertical-offset="0" max-vertical-offset="582" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rails/travel/app/models/post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rails/ToDo_app/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="606">
           <folding />
         </state>
       </provider>
@@ -710,72 +772,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rails/ToDo_app/app/views/to_dos/edit.html.erb">
+    <entry file="file://$PROJECT_DIR$/Rails/travel/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="606">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rails/ToDo_app/app/views/to_dos/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.005154639" vertical-offset="3" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rails/ToDo_app/app/views/to_dos/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="606">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rails/travel/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rails/hello/app/controllers/pages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="77" selection-end="77" vertical-scroll-proportion="0.04950495" vertical-offset="0" max-vertical-offset="606">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rails/hello/app/views/pages/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="9" selection-start="196" selection-end="196" vertical-scroll-proportion="0.20618556" vertical-offset="0" max-vertical-offset="582">
+        <state line="25" column="16" selection-start="867" selection-end="867" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rails/travel/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="77" selection-end="77" vertical-scroll-proportion="0.074257426" vertical-offset="0" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rails/travel/app/controllers/welcome_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="3" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rails/travel/app/views/welcome/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="39" selection-start="252" selection-end="252" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="300">
+        <state line="7" column="36" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rails/travel/app/views/welcome/about.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="9" selection-start="389" selection-end="389" vertical-scroll-proportion="0.43814433" vertical-offset="0" max-vertical-offset="582">
+        <state line="9" column="130" selection-start="330" selection-end="330" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rails/travel/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="12" selection-start="3430" selection-end="3430" vertical-scroll-proportion="-17.5" vertical-offset="675" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rails/travel/app/controllers/welcome_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="5" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rails/travel/app/views/welcome/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="34" selection-start="97" selection-end="97" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rails/travel/app/views/welcome/contact.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="9" selection-start="135" selection-end="135" vertical-scroll-proportion="0.15463917" vertical-offset="0" max-vertical-offset="582">
           <folding />
         </state>
       </provider>
