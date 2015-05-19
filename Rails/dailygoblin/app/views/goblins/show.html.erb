@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @goblin.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @goblin.author %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @goblin.date %>
+</p>
+
+<%= link_to 'Edit', edit_goblin_path(@goblin) %> |
+<%= link_to 'Back', goblins_path %>

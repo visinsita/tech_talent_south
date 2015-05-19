@@ -1,0 +1,2533 @@
+
+
+Started GET "/" for ::1 at 2015-05-13 09:52:52 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/namshub/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/namshub/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/namshub/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (91.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (94.3ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (202.3ms)
+  [1m[36mBlogPost Load (1.5ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+SQLite3::SQLException: no such table: blog_posts: SELECT "blog_posts".* FROM "blog_posts"
+  [1m[35mBlogPost Load (1.4ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+SQLite3::SQLException: no such table: blog_posts: SELECT "blog_posts".* FROM "blog_posts"
+
+
+Started GET "/" for ::1 at 2015-05-13 10:01:08 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/namshub/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/namshub/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/namshub/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (104.3ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (87.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (215.6ms)
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateBlogPosts (20150513135056)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "blog_posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "author" varchar, "blog_entry" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150513135056"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2015-05-13 10:02:58 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (10.6ms)
+Completed 200 OK in 58ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogpost" for ::1 at 2015-05-13 10:03:03 -0400
+
+ActionController::RoutingError (No route matches [GET] "/blogpost"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/namshub/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/namshub/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/namshub/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (24.8ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (187.1ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (89.7ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (204.1ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:03:10 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (16.5ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 2677ms (Views: 2641.9ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-13 10:03:12 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-13 10:03:12 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-13 10:03:12 -0400
+
+
+Started GET "/blog_posts/new" for ::1 at 2015-05-13 10:03:15 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (75.3ms)
+  Rendered blog_posts/new.html.erb within layouts/application (81.2ms)
+Completed 200 OK in 205ms (Views: 194.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/blog_posts" for ::1 at 2015-05-13 10:03:55 -0400
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R+Rbqz2398xS/oAGC4YsRy30dvaTHPE7ZE8jImgVlak4wuU72td4Veo7VqW6RTL3/zOJa7dVfUUtbve7peyFtg==", "blog_post"=>{"title"=>"My Cool Post That I Wrote", "author"=>"Definitely Not HG Wells", "blog_entry"=>"<p>But I will not weary the reader with a description of that long morning and of the longer afternoon.  I did not succeed in getting a glimpse of the common, for even Horsell and Chobham church towers were in the hands of the military authorities.  The soldiers I addressed didn't know anything; the officers were mysterious as well as busy.  I found people in the town quite secure again in the presence of the military, and I heard for the first time from Marshall, the tobacconist, that his son was among the dead on the common.  The soldiers had made the people on the outskirts of Horsell lock up and leave their houses.</p>\r\n\r\n<p>I got back to lunch about two, very tired for, as I have said, the day was extremely hot and dull; and in order to refresh myself I took a cold bath in the afternoon.  About half past four I went up to the railway station to get an evening paper, for the morning papers had contained only a very inaccurate description of the killing of Stent, Henderson, Ogilvy, and the others.  But there was little I didn't know.  The Martians did not show an inch of themselves.  They seemed busy in their pit, and there was a sound of hammering and an almost continuous streamer of smoke.  Apparently they were busy getting ready for a struggle.  \"Fresh attempts have been made to signal, but without success,\" was the stereotyped formula of the papers.  A sapper told me it was done by a man in a ditch with a flag on a long pole.  The Martians took as much notice of such advances as we should of the lowing of a cow.</p>\r\n\r\n<p>I must confess the sight of all this armament, all this preparation, greatly excited me.  My imagination became belligerent, and defeated the invaders in a dozen striking ways; something of my schoolboy dreams of battle and heroism came back.  It hardly seemed a fair fight to me at that time.  They seemed very helpless in that pit of theirs.</p>\r\n\r\n<p>About three o'clock there began the thud of a gun at measured intervals from Chertsey or Addlestone.  I learned that the smouldering pine wood into which the second cylinder had fallen was being shelled, in the hope of destroying that object before it opened.  It was only about five, however, that a field gun reached Chobham for use against the first body of Martians.</p>\r\n\r\n<p>About six in the evening, as I sat at tea with my wife in the summerhouse talking vigorously about the battle that was lowering upon us, I heard a muffled detonation from the common, and immediately after a gust of firing.  Close on the heels of that came a violent rattling crash, quite close to us, that shook the ground; and, starting out upon the lawn, I saw the tops of the trees about the Oriental College burst into smoky red flame, and the tower of the little church beside it slide down into ruin.  The pinnacle of the mosque had vanished, and the roof line of the college itself looked as if a hundred-ton gun had been at work upon it.  One of our chimneys cracked as if a shot had hit it, flew, and a piece of it came clattering down the tiles and made a heap of broken red fragments upon the flower bed by my study window.</p>"}, "commit"=>"Create Blog post"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.0ms)[0m  INSERT INTO "blog_posts" ("title", "author", "blog_entry", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Cool Post That I Wrote"], ["author", "Definitely Not HG Wells"], ["blog_entry", "<p>But I will not weary the reader with a description of that long morning and of the longer afternoon.  I did not succeed in getting a glimpse of the common, for even Horsell and Chobham church towers were in the hands of the military authorities.  The soldiers I addressed didn't know anything; the officers were mysterious as well as busy.  I found people in the town quite secure again in the presence of the military, and I heard for the first time from Marshall, the tobacconist, that his son was among the dead on the common.  The soldiers had made the people on the outskirts of Horsell lock up and leave their houses.</p>\r\n\r\n<p>I got back to lunch about two, very tired for, as I have said, the day was extremely hot and dull; and in order to refresh myself I took a cold bath in the afternoon.  About half past four I went up to the railway station to get an evening paper, for the morning papers had contained only a very inaccurate description of the killing of Stent, Henderson, Ogilvy, and the others.  But there was little I didn't know.  The Martians did not show an inch of themselves.  They seemed busy in their pit, and there was a sound of hammering and an almost continuous streamer of smoke.  Apparently they were busy getting ready for a struggle.  \"Fresh attempts have been made to signal, but without success,\" was the stereotyped formula of the papers.  A sapper told me it was done by a man in a ditch with a flag on a long pole.  The Martians took as much notice of such advances as we should of the lowing of a cow.</p>\r\n\r\n<p>I must confess the sight of all this armament, all this preparation, greatly excited me.  My imagination became belligerent, and defeated the invaders in a dozen striking ways; something of my schoolboy dreams of battle and heroism came back.  It hardly seemed a fair fight to me at that time.  They seemed very helpless in that pit of theirs.</p>\r\n\r\n<p>About three o'clock there began the thud of a gun at measured intervals from Chertsey or Addlestone.  I learned that the smouldering pine wood into which the second cylinder had fallen was being shelled, in the hope of destroying that object before it opened.  It was only about five, however, that a field gun reached Chobham for use against the first body of Martians.</p>\r\n\r\n<p>About six in the evening, as I sat at tea with my wife in the summerhouse talking vigorously about the battle that was lowering upon us, I heard a muffled detonation from the common, and immediately after a gust of firing.  Close on the heels of that came a violent rattling crash, quite close to us, that shook the ground; and, starting out upon the lawn, I saw the tops of the trees about the Oriental College burst into smoky red flame, and the tower of the little church beside it slide down into ruin.  The pinnacle of the mosque had vanished, and the roof line of the college itself looked as if a hundred-ton gun had been at work upon it.  One of our chimneys cracked as if a shot had hit it, flew, and a piece of it came clattering down the tiles and made a heap of broken red fragments upon the flower bed by my study window.</p>"], ["created_at", "2015-05-13 14:03:55.919644"], ["updated_at", "2015-05-13 14:03:55.919644"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts/1
+Completed 302 Found in 99ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-13 10:03:56 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 144ms (Views: 81.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:05:11 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 166ms (Views: 164.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/new" for ::1 at 2015-05-13 10:05:13 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (3.8ms)
+  Rendered blog_posts/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 157ms (Views: 154.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for ::1 at 2015-05-13 10:05:25 -0400
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eek1ywbsBbPe7mAxb3HboiE8jxYY514IWuLvBXq6NM8Gz4tb4YyKKmYrtpLessUS8/twizyu0nYTwzuct0Mk0A==", "blog_post"=>{"title"=>"Film Info", "author"=>"P. Tinglesworth", "blog_entry"=>"A Diary for Timothy (1945) is a British documentary film directed by Humphrey Jennings. It was produced by Basil Wright for the Crown Film Unit. The narration was written by the British author E. M. Forster (spoken by Michael Redgrave) and is an account of the progress of the war during the first six months of the life of a baby named Timothy. The recoveries of a pilot with a broken leg and a miner with a broken arm are also featured. Dame Myra Hess is featured giving a concert at the National Gallery in London, several years after her appearance in Listen to Britain, and John Gielgud performs as the Prince in the gravediggers scene from Hamlet."}, "commit"=>"Create Blog post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "blog_posts" ("title", "author", "blog_entry", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Film Info"], ["author", "P. Tinglesworth"], ["blog_entry", "A Diary for Timothy (1945) is a British documentary film directed by Humphrey Jennings. It was produced by Basil Wright for the Crown Film Unit. The narration was written by the British author E. M. Forster (spoken by Michael Redgrave) and is an account of the progress of the war during the first six months of the life of a baby named Timothy. The recoveries of a pilot with a broken leg and a miner with a broken arm are also featured. Dame Myra Hess is featured giving a concert at the National Gallery in London, several years after her appearance in Listen to Britain, and John Gielgud performs as the Prince in the gravediggers scene from Hamlet."], ["created_at", "2015-05-13 14:05:25.954758"], ["updated_at", "2015-05-13 14:05:25.954758"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/blog_posts/2
+Completed 302 Found in 8ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/blog_posts/2" for ::1 at 2015-05-13 10:05:25 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered blog_posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 89ms (Views: 87.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:05:29 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 104ms (Views: 102.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/new" for ::1 at 2015-05-13 10:05:32 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (2.6ms)
+  Rendered blog_posts/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 89ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for ::1 at 2015-05-13 10:06:17 -0400
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4l/kMzcNy5J2GELilOOG2b70lCFWivdnjoChwv1hLyydeVqj0G1EC87dlEElIJhpbDNrvHLDexnHoXVbMJg/Mw==", "blog_post"=>{"title"=>"Sports Facts About the Game", "author"=>"Hustle B.O. Sportingston", "blog_entry"=>"John E. \"Jack\" Foley (born April 19, 1939) is a retired American professional basketball formerly of the Boston Celtics and New York Knicks in the National Basketball Association (NBA).[1] He was selected in the second round as the 18th pick in the 1962 NBA Draft by the Celtics and spent one season playing in the league.[1] Foley was given the nickname \"The Shot\" because of his explosive offensive ability.[2]\r\n\r\nA native of Worcester, Massachusetts, Foley attended Assumption High School, where he graduated in 1958.[1] He decided to stay close to home when playing college basketball and enrolled at The College of the Holy Cross.[2] Since college freshmen were ineligible to participate on varsity teams, Foley's college career did not officially begin until 1959–60. In his three seasons as a Crusader, he scored so many points that his nickname, \"The Shot\", was what he was commonly referred to. In his sophomore season, Foley averaged 24.6 points per game (ppg), followed by 26.9 ppg and 33.3 ppg during his junior and senior seasons, respectively.[2] In his senior year of 1961–62, he finished second in the nation in scoring behind Utah's Bill McGill (38.8 ppg).[2] That season, Foley garnered consensus Second Team All-American honors. In addition to his high season scoring averages, Foley also put up big single game numbers. He is the record holder of the two highest scoring games in school history—56 points against Connecticut in 1962 and 55 against Colgate in 1960—as well as having scored 40 or more points five times in his career.[2] Foley became the first player in school history to score 2,000 career points, and his 2,185 points was the most in school history until the early 1980s."}, "commit"=>"Create Blog post"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "blog_posts" ("title", "author", "blog_entry", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Sports Facts About the Game"], ["author", "Hustle B.O. Sportingston"], ["blog_entry", "John E. \"Jack\" Foley (born April 19, 1939) is a retired American professional basketball formerly of the Boston Celtics and New York Knicks in the National Basketball Association (NBA).[1] He was selected in the second round as the 18th pick in the 1962 NBA Draft by the Celtics and spent one season playing in the league.[1] Foley was given the nickname \"The Shot\" because of his explosive offensive ability.[2]\r\n\r\nA native of Worcester, Massachusetts, Foley attended Assumption High School, where he graduated in 1958.[1] He decided to stay close to home when playing college basketball and enrolled at The College of the Holy Cross.[2] Since college freshmen were ineligible to participate on varsity teams, Foley's college career did not officially begin until 1959–60. In his three seasons as a Crusader, he scored so many points that his nickname, \"The Shot\", was what he was commonly referred to. In his sophomore season, Foley averaged 24.6 points per game (ppg), followed by 26.9 ppg and 33.3 ppg during his junior and senior seasons, respectively.[2] In his senior year of 1961–62, he finished second in the nation in scoring behind Utah's Bill McGill (38.8 ppg).[2] That season, Foley garnered consensus Second Team All-American honors. In addition to his high season scoring averages, Foley also put up big single game numbers. He is the record holder of the two highest scoring games in school history—56 points against Connecticut in 1962 and 55 against Colgate in 1960—as well as having scored 40 or more points five times in his career.[2] Foley became the first player in school history to score 2,000 career points, and his 2,185 points was the most in school history until the early 1980s."], ["created_at", "2015-05-13 14:06:17.172464"], ["updated_at", "2015-05-13 14:06:17.172464"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts/3
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-13 10:06:17 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 166ms (Views: 165.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:06:22 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 90ms (Views: 88.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/new" for ::1 at 2015-05-13 10:06:27 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (2.4ms)
+  Rendered blog_posts/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blog_posts" for ::1 at 2015-05-13 10:07:30 -0400
+Processing by BlogPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ht2Y5W5B4HyFqt/MDrGoHOJAibv434gcZ0eT7Qi8uur5+yZ1iSFv5T1vCW+/crasMId2JtyWBGIuZkd0xUWq9Q==", "blog_post"=>{"title"=>"Secret Government Secrets", "author"=>"Hardguy McToughguns", "blog_entry"=>"Joint Elimination Coordination Element[1] (JECE) is a staff element of United States Strategic Command[2] (USSTRATCOM) with the mission of integrating WMD Elimination doctrine into operational plans and joint doctrine, augmenting an existing headquarters to provide elimination planning and command and control expertise, and forming the core of a Joint Task Force for Elimination of WMD (JTF-E).\r\n\r\nThe JECE reached initial operational capability in April 2008 and was created by USSTRATCOM as a result of a 2006 Quadrennial Defense Review (QDR) requirement for a \"deployable Joint Task Force headquarters for WMD elimination to be able to provide immediate command and control of forces for executing those missions.\"[3] In the 2010 QDR the Secretary of Defense directed the establishment of a \"standing Joint Task Force Elimination Headquarters. In order to better plan, train, and execute WMD-elimination operations, the Department is establishing a standing Joint Task Force Elimination Headquarters with increased nuclear disablement, exploitation, intelligence, and coordination capabilities.[4]\"\r\n\r\nThe JECE may augment a headquarters along j-code functional lines or as a cell of elimination expertise such as in Talisman Saber 2009 where they reached Final Operational Capability with limitations. The JECE may also form the core element of a JTF-E headquarters as they have performed in Key Resolve and Ulchi-Freedom Guardian exercises in conjunction with the Army's 20th Support Command (CBRNE) headquarters."}, "commit"=>"Create Blog post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "blog_posts" ("title", "author", "blog_entry", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Secret Government Secrets"], ["author", "Hardguy McToughguns"], ["blog_entry", "Joint Elimination Coordination Element[1] (JECE) is a staff element of United States Strategic Command[2] (USSTRATCOM) with the mission of integrating WMD Elimination doctrine into operational plans and joint doctrine, augmenting an existing headquarters to provide elimination planning and command and control expertise, and forming the core of a Joint Task Force for Elimination of WMD (JTF-E).\r\n\r\nThe JECE reached initial operational capability in April 2008 and was created by USSTRATCOM as a result of a 2006 Quadrennial Defense Review (QDR) requirement for a \"deployable Joint Task Force headquarters for WMD elimination to be able to provide immediate command and control of forces for executing those missions.\"[3] In the 2010 QDR the Secretary of Defense directed the establishment of a \"standing Joint Task Force Elimination Headquarters. In order to better plan, train, and execute WMD-elimination operations, the Department is establishing a standing Joint Task Force Elimination Headquarters with increased nuclear disablement, exploitation, intelligence, and coordination capabilities.[4]\"\r\n\r\nThe JECE may augment a headquarters along j-code functional lines or as a cell of elimination expertise such as in Talisman Saber 2009 where they reached Final Operational Capability with limitations. The JECE may also form the core element of a JTF-E headquarters as they have performed in Key Resolve and Ulchi-Freedom Guardian exercises in conjunction with the Army's 20th Support Command (CBRNE) headquarters."], ["created_at", "2015-05-13 14:07:31.014853"], ["updated_at", "2015-05-13 14:07:31.014853"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/blog_posts/4
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/blog_posts/4" for ::1 at 2015-05-13 10:07:31 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered blog_posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 152ms (Views: 150.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:07:33 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.4ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 111ms (Views: 109.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:12:48 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (1.1ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 280ms (Views: 265.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:12:52 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 201ms (Views: 197.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:15:14 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.5ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 235ms (Views: 232.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:33:36 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.9ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (137.6ms)
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined local variable or method `blog_post' for #<#<Class:0x007ff3ebe3ab20>:0x007ff3ecaa9578>):
+     5: 		<div class="col-md-6">
+     6: 			<div class="panel panel-default">
+     7: 				<div class="panel-heading">
+     8: 					<%= blog_post.title %>
+     9: 				</div>
+    10: 				<div class="panel-body">
+    11: 					by <%= blog_post.author %><br />
+  app/views/blog_posts/index.html.erb:8:in `block in _app_views_blog_posts_index_html_erb__1020192097061421363_70342812177160'
+  app/views/blog_posts/index.html.erb:4:in `_app_views_blog_posts_index_html_erb__1020192097061421363_70342812177160'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.0ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.1ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.7ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (80.8ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (180.2ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:33:53 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.4ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (30.8ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined local variable or method `blog_posts' for #<#<Class:0x007ff3ebe3ab20>:0x007ff3f1ae0fc8>):
+     5: 		<div class="col-md-6">
+     6: 			<div class="panel panel-default">
+     7: 				<div class="panel-heading">
+     8: 					<%= blog_posts.title %>
+     9: 				</div>
+    10: 				<div class="panel-body">
+    11: 					by <%= blog_post.author %><br />
+  app/views/blog_posts/index.html.erb:8:in `block in _app_views_blog_posts_index_html_erb__1020192097061421363_70342854270620'
+  app/views/blog_posts/index.html.erb:4:in `_app_views_blog_posts_index_html_erb__1020192097061421363_70342854270620'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.1ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.8ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (103.1ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (196.9ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:34:28 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (23.4ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `blog_post' for #<#<Class:0x007ff3ebe3ab20>:0x007ff3ebefbaa0>):
+     6: 			<div class="panel panel-default">
+     7: 				
+     8: 				<div class="panel-body">
+     9: 					by <%= blog_post.author %><br />
+    10: 					<p><%= blog_post.blog_entry %></p>
+    11: 				</div>
+    12: 				<div class="panel footer">
+  app/views/blog_posts/index.html.erb:9:in `block in _app_views_blog_posts_index_html_erb__1020192097061421363_70342806049400'
+  app/views/blog_posts/index.html.erb:4:in `_app_views_blog_posts_index_html_erb__1020192097061421363_70342806049400'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.8ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (111.9ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (89.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (194.2ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:36:16 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 204ms (Views: 203.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/2" for ::1 at 2015-05-13 10:37:07 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered blog_posts/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 147ms (Views: 145.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:37:09 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:37:29 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 92ms (Views: 91.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-13 10:37:29 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-13 10:37:29 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-13 10:37:29 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-13 10:37:29 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-13 10:37:30 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-13 10:37:30 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-13 10:37:30 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-13 10:37:30 -0400
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:42:59 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (1.0ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (122.7ms)
+Completed 200 OK in 407ms (Views: 397.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-13 10:42:59 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-13 10:42:59 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-13 10:42:59 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-13 10:42:59 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-13 10:42:59 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-13 10:42:59 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-13 10:42:59 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-13 10:42:59 -0400
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-13 10:43:02 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 96ms (Views: 94.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:48:40 -0400
+Processing by BlogPostsController#index as HTML
+  Rendered blog_posts/index.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/index.html.erb:12: syntax error, unexpected tSTRING_BEG, expecting ')'
+...( blog_post.blog_entry[0..200]'...' link_to '[read more]', b...
+...                               ^
+/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...blog_entry[0..200]'...' link_to '[read more]', blog_post);@o...
+...                               ^):
+  app/views/blog_posts/index.html.erb:12: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/blog_posts/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (93.2ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (104.0ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (222.5ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:48:58 -0400
+Processing by BlogPostsController#index as HTML
+  Rendered blog_posts/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/index.html.erb:13: unknown regexp options - dv
+/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/index.html.erb:14: syntax error, unexpected '<'
+				<div class="panel footer">
+				 ^
+/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/index.html.erb:15: syntax error, unexpected '<'
+					<%= link_to 'Edit', edit_blog_...
+					 ^
+/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/index.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;	 end 
+         	    ^
+/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/index.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/index.html.erb:28: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/blog_posts/index.html.erb:13: unknown regexp options - dv
+  app/views/blog_posts/index.html.erb:14: syntax error, unexpected '<'
+  app/views/blog_posts/index.html.erb:15: syntax error, unexpected '<'
+  app/views/blog_posts/index.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+  app/views/blog_posts/index.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/blog_posts/index.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.2ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (72.3ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (178.3ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:50:43 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.5ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 180ms (Views: 179.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-13 10:50:43 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-13 10:50:43 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-13 10:50:43 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-13 10:50:43 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-13 10:50:43 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-13 10:50:43 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-13 10:50:43 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-13 10:50:43 -0400
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:51:09 -0400
+Processing by BlogPostsController#index as HTML
+  Rendered blog_posts/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/index.html.erb:12: syntax error, unexpected tSTRING_BEG, expecting ')'
+...( blog_post.blog_entry[0..200]'...' link_to '[read more]', b...
+...                               ^
+/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...blog_entry[0..200]'...' link_to '[read more]', blog_post );@...
+...                               ^):
+  app/views/blog_posts/index.html.erb:12: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/blog_posts/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.0ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (79.2ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (180.7ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:51:26 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 200ms (Views: 199.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-13 10:51:26 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-13 10:51:26 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-13 10:51:26 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-13 10:51:26 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-13 10:51:26 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-13 10:51:26 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-13 10:51:26 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-13 10:51:26 -0400
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-13 10:51:28 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 10:52:51 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20150513145653)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author" varchar, "comment_entry" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150513145653"]]
+  [1m[36m (25.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddValueToComments (20150513150346)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (9.9ms)[0m  [1mALTER TABLE "comments" ADD "blog_post_id" integer[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150513150346"]]
+  [1m[36m (8.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 11:11:16 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (8.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 786ms (Views: 733.5ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-13 11:11:18 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-13 11:11:18 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-13 11:11:18 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-13 11:11:18 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-13 11:11:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-13 11:11:18 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-13 11:11:18 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-13 11:11:18 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-13 11:11:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-13 11:11:18 -0400
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-13 18:42:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (1.1ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 533ms (Views: 498.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/comments" for ::1 at 2015-05-13 18:43:02 -0400
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (10.7ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 183ms (Views: 159.6ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/comments/new" for ::1 at 2015-05-13 18:43:10 -0400
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (185.5ms)
+  Rendered comments/new.html.erb within layouts/application (208.1ms)
+Completed 200 OK in 357ms (Views: 350.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/comments" for ::1 at 2015-05-13 18:43:30 -0400
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 116ms (Views: 115.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-05-18 08:35:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (14.0ms)
+Completed 200 OK in 65ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 08:35:36 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (5.6ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 539ms (Views: 496.8ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/application.self-1a3bd80cd1263b5c1150134d48eb2d78b7dfef6c338f41bc734520822f2f3c6b.css?body=1" for ::1 at 2015-05-18 08:35:37 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 08:35:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 08:35:37 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 08:35:37 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 08:35:37 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 08:35:37 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 08:35:37 -0400
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-18 08:35:45 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 132ms (Views: 54.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 08:35:48 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 73ms (Views: 72.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 08:36:34 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 65ms (Views: 61.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 08:36:54 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 70ms (Views: 68.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 08:38:03 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 08:39:34 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered comments/_form.html.erb (6.8ms)
+  Rendered blog_posts/show.html.erb within layouts/application (53.6ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@comment) do |f| %>
+    2:   <% if @comment.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+  app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb___3715143663840104209_70155094964920'
+  app/views/blog_posts/show.html.erb:19:in `_app_views_blog_posts_show_html_erb___4345346661557644391_70155091288420'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.9ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (122.1ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (93.8ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (218.5ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 08:45:07 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (13.6ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered comments/_form.html.erb (84.6ms)
+  Rendered blog_posts/show.html.erb within layouts/application (87.3ms)
+Completed 200 OK in 188ms (Views: 136.8ms | ActiveRecord: 14.9ms)
+
+
+Started POST "/comments" for ::1 at 2015-05-18 08:50:59 -0400
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tn7c0ArpKl6C6QThzjguCWCNYhqdYTEWUFnqS/ZYnhXJWGJA7Ymlxzos0kJ/+zC5skqdh7kovWgZeD7SO6GOCg==", "comment"=>{"author"=>"Tibbles", "comment_entry"=>"my dad knows better sports facts than this", "blog_post_id"=>"3"}, "commit"=>"Create Comment"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (9.7ms)[0m  [1mINSERT INTO "comments" ("author", "comment_entry", "blog_post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["author", "Tibbles"], ["comment_entry", "my dad knows better sports facts than this"], ["blog_post_id", 3], ["created_at", "2015-05-18 12:50:59.389079"], ["updated_at", "2015-05-18 12:50:59.389079"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/comments/1
+Completed 302 Found in 18ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/comments/1" for ::1 at 2015-05-18 08:50:59 -0400
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered comments/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 157ms (Views: 134.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments" for ::1 at 2015-05-18 08:51:04 -0400
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 08:51:41 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (10.5ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 72ms (Views: 60.2ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 08:51:44 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered comments/_form.html.erb (5.2ms)
+  Rendered blog_posts/show.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 08:57:20 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (4.9ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered comments/_form.html.erb (2.5ms)
+  Rendered blog_posts/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 105ms (Views: 48.5ms | ActiveRecord: 6.2ms)
+
+
+Started POST "/comments" for ::1 at 2015-05-18 08:57:28 -0400
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3q7sfy7MVMQdYyeYv3Q8A9mImvQ1B5QnksEV2OB4sLuhiFLvyazbXaWm8TsOtyKzC09laRFOGFnb4MFBLYGgpA==", "comment"=>{"author"=>"Bobby", "comment_entry"=>"this sux", "blog_post_id"=>"3"}, "commit"=>"Create Comment"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "comments" ("author", "comment_entry", "blog_post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["author", "Bobby"], ["comment_entry", "this sux"], ["blog_post_id", 3], ["created_at", "2015-05-18 12:57:28.831798"], ["updated_at", "2015-05-18 12:57:28.831798"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/blog_posts/3
+Completed 302 Found in 9ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 08:57:28 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered comments/_form.html.erb (1.9ms)
+  Rendered blog_posts/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 09:10:52 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered comments/_form.html.erb (4.0ms)
+  Rendered blog_posts/show.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 152ms (Views: 150.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/comments" for ::1 at 2015-05-18 09:11:56 -0400
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ObwRadsjY94KWaOIvMFsgqWPd3BjQ6xw6xSAmhypFvpGmq/5PEPsR7KcdSsNAnIyd0iI7UcKIA6iNVQD0VAG5Q==", "comment"=>{"author"=>"Babe", "comment_entry"=>"SPortsz ffffmffn n hwoww fpsrt", "blog_post_id"=>"3"}, "commit"=>"Create Comment"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "comments" ("author", "comment_entry", "blog_post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["author", "Babe"], ["comment_entry", "SPortsz ffffmffn n hwoww fpsrt"], ["blog_post_id", 3], ["created_at", "2015-05-18 13:11:56.587874"], ["updated_at", "2015-05-18 13:11:56.587874"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/blog_posts/3
+Completed 302 Found in 10ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 09:11:56 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered comments/_form.html.erb (2.8ms)
+  Rendered blog_posts/show.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 136ms (Views: 134.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 09:16:02 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered comments/_form.html.erb (3.6ms)
+  Rendered blog_posts/show.html.erb within layouts/application (46.6ms)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `blog_post' for #<#<Class:0x007f9c83152508>:0x007f9c7f7db810>):
+    28: 	<div class="panel-header">
+    29: 		<h4>Comments</h4>
+    30: 	</div>
+    31: 	<% blog_post.comments.each do |comment|%>
+    32: 		<div class="panel-body">
+    33: 			<p><strong><%= comment.author %></strong> said: </p>
+    34: 			<p><%= comment.comment_entry %></p>
+  app/views/blog_posts/show.html.erb:31:in `_app_views_blog_posts_show_html_erb___4345346661557644391_70155065283160'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.9ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.9ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (95.7ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (206.1ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 09:25:04 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered comments/_form.html.erb (3.4ms)
+  Rendered blog_posts/show.html.erb within layouts/application (41.8ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `blog_post' for #<#<Class:0x007f9c83152508>:0x007f9c83290208>):
+    28: 	<div class="panel-header">
+    29: 		<h4>Comments</h4>
+    30: 	</div>
+    31: 	<% blog_post.comments.each do |comment|%>
+    32: 		<div class="panel-body">
+    33: 			<p><strong><%= comment.author %></strong> said: </p>
+    34: 			<p><%= comment.comment_entry %></p>
+  app/views/blog_posts/show.html.erb:31:in `_app_views_blog_posts_show_html_erb___4345346661557644391_70155065283160'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.1ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.3ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (92.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (215.8ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 09:26:21 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered comments/_form.html.erb (2.4ms)
+  Rendered blog_posts/show.html.erb within layouts/application (26.2ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `blog_post' for #<#<Class:0x007f9c83152508>:0x007f9c80ca7b68>):
+    28: 	<div class="panel-header">
+    29: 		<h4>Comments</h4>
+    30: 	</div>
+    31: 	<% blog_post.comments.each do |comment| %>
+    32: 		<div class="panel-body">
+    33: 			<p><strong><%= comment.author %></strong> said: </p>
+    34: 			<p><%= comment.comment_entry %></p>
+  app/views/blog_posts/show.html.erb:31:in `_app_views_blog_posts_show_html_erb___4345346661557644391_70155076184080'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.7ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (120.0ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (76.8ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (173.9ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 09:27:06 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered comments/_form.html.erb (2.1ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (76.1ms)
+Completed 200 OK in 183ms (Views: 180.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 10:03:59 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBlogPost Load (0.7ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered comments/_form.html.erb (7.1ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 443ms (Views: 430.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-ff8c68eabfd17cd483db48c8f7cd9b2433658f52c8e53183f1362d14b8e9a213.css?body=1" for ::1 at 2015-05-18 10:03:59 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:03:59 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:03:59 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:03:59 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:03:59 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:03:59 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:03:59 -0400
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 10:04:12 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (10.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 89ms (Views: 77.2ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 10:04:51 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 106ms (Views: 104.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-cc97abef77c9e982d2186065ca244f6f4b6009404c2f81c75e7c6bd9d3e5a78b.css?body=1" for ::1 at 2015-05-18 10:04:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:04:51 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:04:51 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:04:51 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:04:51 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:04:51 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:04:51 -0400
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-18 10:04:55 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered comments/_form.html.erb (2.3ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 64ms (Views: 62.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 10:06:35 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 91ms (Views: 89.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:06:35 -0400
+
+
+Started GET "/assets/application.self-15bbff8010dd538c4bca33d93959473e36e6211db06af52edf1ac5c1e573b2e0.css?body=1" for ::1 at 2015-05-18 10:06:35 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:06:35 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:06:35 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:06:35 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:06:36 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:06:36 -0400
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 10:10:07 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.4ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 163ms (Views: 161.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e0a9edc3302f578fa05266278811662df08c5ebbfd0a901d4ea6eb9b02f24d26.css?body=1" for ::1 at 2015-05-18 10:10:07 -0400
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 10:10:09 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.4ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-18 10:10:13 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_form.html.erb (3.3ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (48.6ms)
+Completed 200 OK in 105ms (Views: 103.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 10:11:30 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:11:30 -0400
+
+
+Started GET "/assets/application.self-e0a9edc3302f578fa05266278811662df08c5ebbfd0a901d4ea6eb9b02f24d26.css?body=1" for ::1 at 2015-05-18 10:11:30 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:11:30 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:11:30 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:11:30 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:11:30 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:11:30 -0400
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-18 10:11:35 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered comments/_form.html.erb (2.2ms)
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 53ms (Views: 50.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 10:12:06 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e0a9edc3302f578fa05266278811662df08c5ebbfd0a901d4ea6eb9b02f24d26.css?body=1" for ::1 at 2015-05-18 10:12:06 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:12:06 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:12:06 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:12:06 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:12:06 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:12:07 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:12:07 -0400
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 10:12:58 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e0a9edc3302f578fa05266278811662df08c5ebbfd0a901d4ea6eb9b02f24d26.css?body=1" for ::1 at 2015-05-18 10:12:58 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:12:58 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:12:58 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:12:58 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:12:58 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:12:58 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:12:58 -0400
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-18 10:13:00 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered comments/_form.html.erb (2.3ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-18 10:15:04 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBlogPost Load (0.1ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered comments/_form.html.erb (2.2ms)
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 199ms (Views: 197.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-af4d6f4ca841d3282b91b4a00cd7f5323764ea9df2c88be464c015cf1d6cd5e5.css?body=1" for ::1 at 2015-05-18 10:15:05 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:15:05 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:15:05 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:15:05 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:15:05 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:15:05 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:15:05 -0400
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-18 10:16:50 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBlogPost Load (0.1ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered comments/_form.html.erb (3.8ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 441ms (Views: 439.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:16:51 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:16:51 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:16:51 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:16:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:16:51 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:16:51 -0400
+
+
+Started GET "/assets/application.self-6fec71d35d9d01078a4bcd830c7ce13fd163d66ae6c7dc525e4ee30c9831b217.css?body=1" for ::1 at 2015-05-18 10:16:51 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:16:51 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:16:51 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:16:51 -0400
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-18 10:18:36 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBlogPost Load (0.1ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered comments/_form.html.erb (2.3ms)
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 219ms (Views: 217.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:18:36 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:18:36 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:18:36 -0400
+
+
+Started GET "/assets/application.self-6fec71d35d9d01078a4bcd830c7ce13fd163d66ae6c7dc525e4ee30c9831b217.css?body=1" for ::1 at 2015-05-18 10:18:36 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:18:36 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:18:36 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:18:36 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:18:36 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:18:36 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:18:36 -0400
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 10:18:46 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 105ms (Views: 104.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:18:47 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:18:47 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:18:47 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:18:47 -0400
+
+
+Started GET "/assets/application.self-6fec71d35d9d01078a4bcd830c7ce13fd163d66ae6c7dc525e4ee30c9831b217.css?body=1" for ::1 at 2015-05-18 10:18:47 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:18:47 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:18:47 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:18:47 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:18:47 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:18:47 -0400
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 10:20:12 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.7ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 309ms (Views: 307.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:20:12 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:20:12 -0400
+
+
+Started GET "/assets/application.self-ae89d8978b3c19442e715cd214ea0c0a0558cce3abb14d8521f04215bc1bd8b4.css?body=1" for ::1 at 2015-05-18 10:20:12 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:20:12 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:20:12 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:20:13 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:20:13 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:20:13 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:20:13 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:20:13 -0400
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 10:22:30 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 218ms (Views: 216.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:22:30 -0400
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:22:30 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:22:30 -0400
+
+
+Started GET "/assets/application.self-646428c89c640bd004d48255dbcce56ac6afa08a296c31911410525f6ad8c2d1.css?body=1" for ::1 at 2015-05-18 10:22:30 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:22:30 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:22:30 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:22:30 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:22:30 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:22:30 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:22:30 -0400
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 10:26:57 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered comments/_form.html.erb (2.5ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 229ms (Views: 227.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 10:27:17 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered comments/_form.html.erb (2.1ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 63ms (Views: 61.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:27:17 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:27:17 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:27:17 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:27:17 -0400
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:27:17 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:27:17 -0400
+
+
+Started GET "/assets/application.self-646428c89c640bd004d48255dbcce56ac6afa08a296c31911410525f6ad8c2d1.css?body=1" for ::1 at 2015-05-18 10:27:17 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:27:17 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:27:17 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:27:17 -0400
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 10:30:52 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (15.7ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered comments/_form.html.erb (3.3ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 326ms (Views: 268.1ms | ActiveRecord: 17.1ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:30:53 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:30:53 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:30:53 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:30:53 -0400
+
+
+Started GET "/assets/application.self-5ec70bb3a75fb38259874291c7a4d3d40cabe2f0d09e494cf8c0e59e783956af.css?body=1" for ::1 at 2015-05-18 10:30:53 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:30:53 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:30:53 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:30:53 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:30:53 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:30:53 -0400
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 10:36:32 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (19.1ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 230ms (Views: 209.9ms | ActiveRecord: 19.1ms)
+
+
+Started GET "/blog_posts/new" for ::1 at 2015-05-18 10:36:36 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (4.7ms)
+  Rendered blog_posts/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 141ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog_posts/new" for ::1 at 2015-05-18 10:46:20 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (17.9ms)
+  Rendered blog_posts/new.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 302ms (Views: 291.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5ec70bb3a75fb38259874291c7a4d3d40cabe2f0d09e494cf8c0e59e783956af.css?body=1" for ::1 at 2015-05-18 10:46:20 -0400
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:46:20 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:46:20 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:46:20 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:46:20 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:46:20 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:46:20 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:46:20 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:46:20 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:46:20 -0400
+
+
+Started GET "/blog_posts/new" for ::1 at 2015-05-18 10:46:58 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (5.7ms)
+  Rendered blog_posts/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 211ms (Views: 209.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:46:59 -0400
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:46:59 -0400
+
+
+Started GET "/assets/application.self-5ec70bb3a75fb38259874291c7a4d3d40cabe2f0d09e494cf8c0e59e783956af.css?body=1" for ::1 at 2015-05-18 10:46:59 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:46:59 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:46:59 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-18 10:46:59 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:46:59 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:46:59 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:46:59 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:46:59 -0400
+
+
+Started GET "/blog_posts/new" for ::1 at 2015-05-18 10:48:19 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (5.5ms)
+  Rendered blog_posts/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 238ms (Views: 236.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:48:20 -0400
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:48:20 -0400
+
+
+Started GET "/assets/application.self-5ec70bb3a75fb38259874291c7a4d3d40cabe2f0d09e494cf8c0e59e783956af.css?body=1" for ::1 at 2015-05-18 10:48:20 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:48:20 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:48:20 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:48:20 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:48:20 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:48:20 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:48:20 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:48:20 -0400
+
+
+Started GET "/blog_posts/new" for ::1 at 2015-05-18 10:48:52 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (4.0ms)
+  Rendered blog_posts/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 275ms (Views: 274.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:48:52 -0400
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:48:52 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:48:52 -0400
+
+
+Started GET "/assets/application.self-5ec70bb3a75fb38259874291c7a4d3d40cabe2f0d09e494cf8c0e59e783956af.css?body=1" for ::1 at 2015-05-18 10:48:52 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:48:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:48:52 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:48:52 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:48:52 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:48:52 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:48:52 -0400
+
+
+Started GET "/blog_posts/new" for ::1 at 2015-05-18 10:51:12 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (4.4ms)
+  Rendered blog_posts/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 94ms (Views: 92.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:51:12 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:51:12 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:51:12 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:51:12 -0400
+
+
+Started GET "/assets/application.self-5ec70bb3a75fb38259874291c7a4d3d40cabe2f0d09e494cf8c0e59e783956af.css?body=1" for ::1 at 2015-05-18 10:51:12 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:51:12 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:51:12 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:51:12 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:51:12 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:51:12 -0400
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 10:54:29 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (0.5ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 191ms (Views: 189.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-18 10:54:32 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_form.html.erb (3.8ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 93ms (Views: 89.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-18 10:57:00 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_form.html.erb (4.9ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 185ms (Views: 182.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:57:00 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:57:00 -0400
+
+
+Started GET "/assets/application.self-5ec70bb3a75fb38259874291c7a4d3d40cabe2f0d09e494cf8c0e59e783956af.css?body=1" for ::1 at 2015-05-18 10:57:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:57:00 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:57:00 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:57:00 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:57:00 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:57:01 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:57:01 -0400
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:57:01 -0400
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-18 10:57:28 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_form.html.erb (2.2ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 154ms (Views: 152.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:57:28 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:57:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:57:28 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:57:29 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:57:29 -0400
+
+
+Started GET "/assets/application.self-5ec70bb3a75fb38259874291c7a4d3d40cabe2f0d09e494cf8c0e59e783956af.css?body=1" for ::1 at 2015-05-18 10:57:29 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:57:29 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:57:29 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:57:29 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:57:29 -0400
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-18 10:57:55 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_form.html.erb (2.5ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:57:55 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:57:55 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:57:55 -0400
+
+
+Started GET "/assets/application.self-5ec70bb3a75fb38259874291c7a4d3d40cabe2f0d09e494cf8c0e59e783956af.css?body=1" for ::1 at 2015-05-18 10:57:55 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:57:55 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:57:55 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:57:55 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:57:55 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:57:55 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:57:55 -0400
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 10:58:04 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 87ms (Views: 85.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 10:58:07 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBlogPost Load (0.1ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered comments/_form.html.erb (2.2ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 66ms (Views: 64.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 10:58:14 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered comments/_form.html.erb (2.3ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 65ms (Views: 63.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:58:14 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:58:14 -0400
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:58:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:58:14 -0400
+
+
+Started GET "/assets/application.self-5ec70bb3a75fb38259874291c7a4d3d40cabe2f0d09e494cf8c0e59e783956af.css?body=1" for ::1 at 2015-05-18 10:58:14 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:58:14 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:58:14 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:58:14 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:58:14 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:58:14 -0400
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 10:58:38 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered comments/_form.html.erb (4.4ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 624ms (Views: 621.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:58:39 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:58:39 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:58:39 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:58:39 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:58:39 -0400
+
+
+Started GET "/assets/application.self-5ec70bb3a75fb38259874291c7a4d3d40cabe2f0d09e494cf8c0e59e783956af.css?body=1" for ::1 at 2015-05-18 10:58:39 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:58:39 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:58:39 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:58:39 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:58:39 -0400
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 10:59:02 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered comments/_form.html.erb (3.7ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 163ms (Views: 161.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:59:02 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 10:59:02 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 10:59:02 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 10:59:02 -0400
+
+
+Started GET "/assets/application.self-5ec70bb3a75fb38259874291c7a4d3d40cabe2f0d09e494cf8c0e59e783956af.css?body=1" for ::1 at 2015-05-18 10:59:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 10:59:02 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 10:59:02 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:59:02 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 10:59:02 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 10:59:02 -0400
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 11:02:26 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered comments/_form.html.erb (2.6ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 209ms (Views: 206.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 11:02:27 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 11:02:27 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 11:02:27 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 11:02:27 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 11:02:27 -0400
+
+
+Started GET "/assets/application.self-5ec70bb3a75fb38259874291c7a4d3d40cabe2f0d09e494cf8c0e59e783956af.css?body=1" for ::1 at 2015-05-18 11:02:27 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 11:02:27 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 11:02:27 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 11:02:27 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 11:02:27 -0400
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-18 11:02:38 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered comments/_form.html.erb (2.2ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?[0m  [["blog_post_id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 65ms (Views: 63.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 11:02:38 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-18 11:02:38 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-18 11:02:38 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 11:02:38 -0400
+
+
+Started GET "/assets/application.self-5ec70bb3a75fb38259874291c7a4d3d40cabe2f0d09e494cf8c0e59e783956af.css?body=1" for ::1 at 2015-05-18 11:02:38 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 11:02:38 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 11:02:38 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 11:02:38 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 11:02:38 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 11:02:38 -0400
+
+
+Started GET "/test" for ::1 at 2015-05-18 11:21:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (50.0ms)
+  Rendered blog_posts/new.html.erb within layouts/application (69.9ms)
+Completed 200 OK in 877ms (Views: 818.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/test" for ::1 at 2015-05-18 11:22:01 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (2.5ms)
+  Rendered blog_posts/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 64ms (Views: 63.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/test" for ::1 at 2015-05-18 11:22:01 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (3.3ms)
+  Rendered blog_posts/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 94ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/test" for ::1 at 2015-05-18 11:22:01 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (4.9ms)
+  Rendered blog_posts/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 99ms (Views: 96.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/test" for ::1 at 2015-05-18 11:22:04 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (4.5ms)
+  Rendered blog_posts/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 96ms (Views: 95.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 11:22:04 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 11:22:04 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 11:22:04 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 11:22:04 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 11:22:04 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 11:22:04 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-18 11:22:07 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-18 11:22:07 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-18 11:22:07 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 11:22:07 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-18 11:22:07 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-18 11:22:07 -0400
+
+
+Started GET "/" for ::1 at 2015-05-18 11:22:15 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (1.4ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-18 11:22:20 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (10.2ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 89ms (Views: 77.4ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/blog_posts/new" for ::1 at 2015-05-18 11:22:26 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (10.9ms)
+  Rendered blog_posts/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-19 08:09:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (10.9ms)
+Completed 200 OK in 100ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-19 08:09:50 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[35mBlogPost Load (9.7ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+  Rendered blog_posts/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 647ms (Views: 600.4ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-19 08:09:54 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.6ms)
+
+SyntaxError (/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/show.html.erb:8: unknown type of %string
+...post.created_at.strftime.%a %B %e %y );@output_buffer.safe_a...
+...                               ^
+/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/show.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+...post.created_at.strftime.%a %B %e %y );@output_buffer.safe_a...
+...                               ^):
+  app/views/blog_posts/show.html.erb:8: unknown type of %string
+  app/views/blog_posts/show.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (142.2ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (94.0ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (297.2ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-19 08:09:56 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/show.html.erb:8: unknown type of %string
+...post.created_at.strftime.%a %B %e %y );@output_buffer.safe_a...
+...                               ^
+/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/show.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+...post.created_at.strftime.%a %B %e %y );@output_buffer.safe_a...
+...                               ^):
+  app/views/blog_posts/show.html.erb:8: unknown type of %string
+  app/views/blog_posts/show.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.2ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (74.2ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (169.5ms)
+
+
+Started GET "/blog_posts/3" for ::1 at 2015-05-19 08:12:46 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered comments/_form.html.erb (160.6ms)
+  [1m[35mComment Load (23.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?  [["blog_post_id", 3]]
+  Rendered blog_posts/show.html.erb within layouts/application (296.2ms)
+Completed 200 OK in 739ms (Views: 713.2ms | ActiveRecord: 23.6ms)
+
+
+Started GET "/" for ::1 at 2015-05-19 08:21:13 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (1.1ms)
+Completed 200 OK in 51ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog_posts/new" for ::1 at 2015-05-19 08:21:21 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (6.8ms)
+  Rendered blog_posts/new.html.erb within layouts/application (31.3ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/_form.html.erb:29: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/_form.html.erb:31: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/blog_posts/_form.html.erb:29: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/blog_posts/_form.html.erb:31: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/blog_posts/new.html.erb:3:in `_app_views_blog_posts_new_html_erb__584199265793966775_70257564644360'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (124.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (92.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (196.1ms)
+
+
+Started GET "/blog_posts/new" for ::1 at 2015-05-19 08:21:35 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (2.1ms)
+  Rendered blog_posts/new.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/_form.html.erb:27: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/namshub/Desktop/TTS/Rails/bloggg/app/views/blog_posts/_form.html.erb:29: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/blog_posts/_form.html.erb:27: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/blog_posts/_form.html.erb:29: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/blog_posts/new.html.erb:3:in `_app_views_blog_posts_new_html_erb__584199265793966775_70257564644360'
+
+
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (102.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (85.2ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/namshub/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (210.4ms)
+
+
+Started GET "/blog_posts/new" for ::1 at 2015-05-19 08:22:10 -0400
+Processing by BlogPostsController#new as HTML
+  Rendered blog_posts/_form.html.erb (5.5ms)
+  Rendered blog_posts/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 240ms (Views: 239.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blog_posts" for ::1 at 2015-05-19 08:22:20 -0400
+Processing by BlogPostsController#index as HTML
+  [1m[36mBlogPost Load (0.5ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  Rendered blog_posts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 164ms (Views: 161.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-19 08:26:38 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBlogPost Load (0.3ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered comments/_form.html.erb (5.6ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 267ms (Views: 264.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-19 08:27:02 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBlogPost Load (0.2ms)[0m  SELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered comments/_form.html.erb (5.0ms)
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?[0m  [["blog_post_id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 195ms (Views: 192.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-19 08:27:02 -0400
+
+
+Started GET "/assets/scaffolds.self-e266d358822f8b702fd789b74fc1db8265589a3b9f7140451bc6fd19fb16be1c.css?body=1" for ::1 at 2015-05-19 08:27:02 -0400
+
+
+Started GET "/assets/blog_posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-19 08:27:02 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-19 08:27:02 -0400
+
+
+Started GET "/assets/application.self-5ec70bb3a75fb38259874291c7a4d3d40cabe2f0d09e494cf8c0e59e783956af.css?body=1" for ::1 at 2015-05-19 08:27:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-19 08:27:02 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-19 08:27:03 -0400
+
+
+Started GET "/assets/blog_posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-19 08:27:03 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-19 08:27:03 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-19 08:27:03 -0400
+
+
+Started POST "/comments" for ::1 at 2015-05-19 08:27:10 -0400
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gjpmATg/Mhzvg/SJGyC6Rwdee4YXkjSCA4iq2vC4o9r9HNiR31+9hVdGIiqq46T31ZmEGzPbuPxKqX5DPUGzxQ==", "comment"=>{"author"=>"Guy", "comment_entry"=>"Text", "blog_post_id"=>"1"}, "commit"=>"Create Comment"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (7.3ms)[0m  [1mINSERT INTO "comments" ("author", "comment_entry", "blog_post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["author", "Guy"], ["comment_entry", "Text"], ["blog_post_id", 1], ["created_at", "2015-05-19 12:27:10.702501"], ["updated_at", "2015-05-19 12:27:10.702501"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/blog_posts/1
+Completed 302 Found in 17ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/blog_posts/1" for ::1 at 2015-05-19 08:27:10 -0400
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1mSELECT  "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_form.html.erb (1.7ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."blog_post_id" = ?  [["blog_post_id", 1]]
+  Rendered blog_posts/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 91ms (Views: 68.5ms | ActiveRecord: 0.4ms)

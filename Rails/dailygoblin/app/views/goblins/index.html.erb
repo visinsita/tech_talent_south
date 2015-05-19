@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Goblins</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @goblins.each do |goblin| %>
+      <tr>
+        <td><%= goblin.title %></td>
+        <td><%= goblin.author %></td>
+        <td><%= goblin.date %></td>
+        <td><%= link_to 'Show', goblin %></td>
+        <td><%= link_to 'Edit', edit_goblin_path(goblin) %></td>
+        <td><%= link_to 'Destroy', goblin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Goblin', new_goblin_path %>

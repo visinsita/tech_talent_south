@@ -1,11 +1,13 @@
 <p id="notice"><%= notice %></p>
 
+<div class = "container">
 <h1>Listing To Dos</h1>
 
-<table>
+<table class = table border = "10px">
+
   <thead>
     <tr>
-      <th>Title</th>
+      <th>Task</th>
       <th>Notes</th>
       <th>Due</th>
       <th>Done</th>
@@ -22,7 +24,7 @@
         <td><%= to_do.done %></td>
         <td><%= link_to 'Show', to_do %></td>
         <td><%= link_to 'Edit', edit_to_do_path(to_do) %></td>
-        <td><%= link_to 'Destroy', to_do, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Remove', to_do, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -31,3 +33,8 @@
 <br>
 
 <%= link_to 'New To do', new_to_do_path %>
+
+<div id = "bgchange">
+<button type="button" class="btn btn-default">Background</button>
+</div>
+</div>
